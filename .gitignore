@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/.gitignore
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/py_lancamentos_contabeis.iml
+.idea/vcs.xml
+
+# Test files
+inputs/lancamentos.csv
+inputs/
+outputs/
