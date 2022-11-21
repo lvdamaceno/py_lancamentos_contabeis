@@ -44,6 +44,3 @@ def generate_xml(filename):
         f.write('\n</LCTOS>')
 
     return output_file
-
-
-generate_xml('inputs/lancamentos.csv')

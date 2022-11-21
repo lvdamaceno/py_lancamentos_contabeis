@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Downloads</title>
 </head>
 <body>
-$END$
+    {% for filename in files %}
+    <a href="{{ url_for('download_file',filename=filename)}}">{{ filename }}</a><br />
+    {% endfor %}
 </body>
 </html>

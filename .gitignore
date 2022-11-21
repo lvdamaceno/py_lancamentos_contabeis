@@ -135,6 +135,6 @@ dmypy.json
 .idea/vcs.xml
 
 # Test files
-inputs/lancamentos.csv
+venv/
 inputs/
 outputs/
