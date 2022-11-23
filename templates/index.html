@@ -3,12 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <title>Upload</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      html {
+        display: table;
+        margin: auto;
+      }
+      body {
+        font-family: 'Courier New', Courier, monospace;
+        display: table-cell;
+        vertical-align: middle;
+      }
+      a:visited {
+        color: white;
+      }
+      p {
+        font-size: 30px;
+        padding: 20px 10px;
+        width: 200px;
+        background-color: #333;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      input {
+        font-size: 30px;
+      }
+      input[type='file'] {
+        display: none;
+      }
+      label {
+        font-size: 30px;
+        padding: 20px 10px;
+        width: 200px;
+        background-color: #333;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      button {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+        padding: 20px 10px;
+        width: 220px;
+        background-color: #333;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+      }
+    </style>
   </head>
   <body>
+    <p>
+      <a href="static/lancamentos_top50.csv"> Modelo </a>
+    </p>
     <form action="/" method="POST" enctype="multipart/form-data">
-      <label for="file">File:</label>
-      <input type="file" id="file" name="file" /><br />
-      <button>Upload</button>
+      <label for="file">Upload</label> <br />
+      <input type="file" id="file" name="file" />
+      <button class="button">Converter</button>
     </form>
   </body>
 </html>
