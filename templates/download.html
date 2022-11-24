@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Downloads</title>
+    <style>
+        html,
+      body {
+        height: 100%;
+        width: 300px;
+      }
+      html {
+        display: table;
+        margin: auto;
+      }
+      body {
+        font-family: 'Courier New', Courier, monospace;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 25px;
+      }
+    </style>
 </head>
 <body>
     {% for filename in files %}
-    <a href="{{ url_for('download_file',filename=filename)}}">{{ filename }}</a><br />
+    <a href="{{ url_for('download_file',filename=filename)}}">{{ filename }}</a><br /><br>
     {% endfor %}
 </body>
 </html>
